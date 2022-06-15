@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+}
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
     box-sizing: border-box;
@@ -39,6 +40,96 @@ label.logo img{
 
 } */
 
+
+/*Abaixo, linhas de código de Victoria Moreira */
+}
+/* AQUI COMECA TIPO DE CARTOES */
+
+.container-1{
+    background-color: #E7EEF3;
+    padding-top: 10vh;
+    height: 45vh;
+    display: flex;
+}
+.container-2{
+    height: 45vh;
+    display: flex;
+}
+
+.bloco-1, .bloco-2{
+    width: 50vw;
+    background: #E7EEF3;
+}
+
+.bloco-3, .bloco-4{
+    width: 50vw;
+    background: #E9EEF3;
+}
+
+.bloco-1 > img, .bloco-4 > img{
+    height: 45vh;
+}
+
+.bloco-2, .bloco-3{
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    padding-right: 10vw;
+}
+
+.bloco-3{
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    padding-left: 10vw;
+}
+
+ .bloco-2 > h3, .bloco-3 > h3{
+    padding-top: 15vh;
+    justify-content: baseline;
+}
+
+
+/* AQUI TERMINA TIPO DE CARTOES */
+
+/* AQUI COMECA EMPRESAS PARCEIRAS */
+
+.grid-empresas-parceiras{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.grid-empresas-parceiras > h2{
+
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    align-items: flex-end;
+}
+
+.icones-empresas-linha1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.icones-empresas-linha2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 0 10vw;
+}
+
+.icones-empresas{
+    height: 20vh;
+    box-shadow: 3px 3px rgba(169, 169, 169, 0.452);
+}
+
+/* AQUI TERMINA EMPRESAS PARCEIRAS */
+
+/*Abaixo, linhas de código de Danielle Arantes*/
 
 form{
     display: grid;
