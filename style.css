@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*Abaixo, linhas de código do Daniel Barradas */
@@ -11,7 +12,7 @@ nav{
     align-items: center;
     background: #ff914d;
     min-height: 8vh;
-    width: 100%;
+    width: 100vw;
 }
 label.logo img{
     height: 70px;
@@ -27,8 +28,49 @@ label.logo img{
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 4px;
+    font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+@media screen and (max-width:768px){
+    header{
+        overflow-x: hidden;
+    }
+    .links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 10vh;
+        background-color: #ff914d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .link li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+.link-ativo{
+    transform: translateX(0%);
 }
 /* a.ativo,a:hover{
     background: #ffbd59;
