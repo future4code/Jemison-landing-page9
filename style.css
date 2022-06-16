@@ -40,6 +40,61 @@ label.logo img{
 
 } */
 
+/*Abaixo, linhas de código de Wilson Alves*/
+.home{
+    display: flex;
+}
+
+.imagem-home {
+    width: 100%;   
+
+}
+
+.frase-home1 {
+    position: absolute;
+    top: 73%;
+    left: 10%;
+    font-size: 40px;
+    color: black
+}
+.frase-home2 {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 40px;
+    color: black
+}
+.botao-home {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    font-size: 30px;
+    color: orange;
+}
+
+.quem-somos{
+    display: grid;
+    width: 1200px;
+    margin: 30px;
+    gap: 20px;
+    grid-template-rows: 200px 300px;
+    grid-template-columns: 600px 600px;
+    grid-template-areas: 'box1 box3'
+'box2 box4'
+}
+
+.comeco{
+    grid-area: box1;
+}
+.proposito{
+    grid-area: box2;
+}
+.valores{
+    grid-area: box3;
+}
+.clientes{
+    grid-area: box4;
+}
 
 /*Abaixo, linhas de código de Victoria Moreira */
 }
