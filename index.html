@@ -13,13 +13,29 @@
         <nav>
             <label class="logo"><img src="menu/f4bank.png" alt="Logo F4Bank"></label>
             <ul class="links">
-                    <li><a class="ativo" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="index.html">Sobre</a></li>
                     <li><a href="index.html">Cartão</a></li>
                     <li><a href="index.html">Parceiros</a></li>
                     <li><a href="index.html">Conta</a></li>
-                </ul>
+            </ul>
+            <div class="burger">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
         </nav>
+        <script>
+            const navSlide=()=>{
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.links');
+
+                burger.addEventListener('click', ()=>{
+                    nav.classList.toggle('link-ativo')
+                })
+            }
+            navSlide();
+        </script>
     </header>
   
 <!-- Wilson -->
