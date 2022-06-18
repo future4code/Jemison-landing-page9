@@ -80,37 +80,56 @@ nav ul li{
 
 /*Abaixo, linhas de código de Wilson Alves*/
 .home{
-    display: flex;
+    background-color: #FFDC93;
+    /* background-color: #24ce57; */
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
     width: 100%;
     height: 100vh;
 }
 
+.primeira-coluna{
+    display: grid;
+    /* grid-template-rows: repeat(2, 0.5fr) 1fr; */
+    align-content: flex-start;
+    padding-top: 30%;
+    padding-left: 20%;
+}
+
 .imagem-home {
-    width: 100vw;
-    height: auto;
-
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 60vw;
+    height: 90vh;
+    padding-top: 10vh;
 }
 
-.frase-home1 {
-    position: absolute;
-    top: 73%;
-    left: 10%;
-    font-size: 40px;
-    color: black
+.frase-home1, .frase-home2{
+    font-size: x-large;
+    color: rgb(201, 111, 26);
 }
-.frase-home2 {
-    position: absolute;
-    top: 80%;
-    left: 10%;
-    font-size: 40px;
-    color: black
+
+.frase-home1{
+    padding-top: 10%;
 }
+
+.frase-home2{
+    padding-bottom: 10%;
+}
+
 .botao-home {
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    font-size: 30px;
-    color: orange;
+    font-size: medium;
+    background-color: white;
+    color: #ff914d;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.botao-home:hover{
+    background-color: #f7b6288f;
+    font-weight: bold;
 }
 
 #tituloquemsomos{
@@ -124,8 +143,8 @@ nav ul li{
 
 .todoquemsomos{
     margin-top: 8%;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 90vh;
 }
 
 
@@ -136,8 +155,9 @@ nav ul li{
     margin-top: 5%;
     grid-template-rows: 200px 200px;
     grid-template-columns: 600px 600px;
-    grid-template-areas: 'box1 box3'
-'box2 box4'
+    grid-template-areas: 
+    'box1 box3'
+    'box2 box4'
 }
 
 .comeco{
@@ -174,7 +194,7 @@ nav ul li{
 
 .bloco-3, .bloco-4{
     width: 50vw;
-    background: #E9EEF3;
+    background: #DFE7EC;
 }
 
 .bloco-1 > img, .bloco-4 > img{
@@ -191,6 +211,10 @@ nav ul li{
     display: grid;
     grid-template-rows: 1.5fr 2fr;
     padding-left: 10vw;
+}
+
+.bloco-4{
+    padding-left: 25%;
 }
 
  .bloco-2 > h3, .bloco-3 > h3{
