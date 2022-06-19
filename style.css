@@ -322,6 +322,9 @@ footer{
     .burger{
         display: block;
     }
+    .link-ativo{
+        transform: translateX(0%);
+    }
 
     /* VICTORIA MOREIRA */
 
@@ -337,11 +340,6 @@ footer{
         background: #E7EEF3;
         display: flex;
     }
-
-    /* .bloco-2 > h3, .bloco-2 > p, .bloco-3 > h3, .bloco-3 > p{
-        display: inline;
-        width: auto;
-    } */
 
     .bloco-1, .bloco-4{
         display: none;
