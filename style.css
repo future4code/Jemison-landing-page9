@@ -45,41 +45,13 @@ nav ul li{
     background-color: white;
     margin: 5px;
 }
-@media screen and (max-width:768px){
-    header{
-        overflow-x: hidden;
-    }
-    .links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 10vh;
-        background-color: #ff914d;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .link li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
-}
+
 .link-ativo{
     transform: translateX(0%);
 }
-/* a.ativo,a:hover{
-    background: #ffbd59;
-    transition: .5s;
-
-} */
 
 /*Abaixo, linhas de código de Wilson Alves*/
-.home{
+#home{
     background-color: #FFDC93;
     /* background-color: #24ce57; */
     display: grid;
@@ -141,7 +113,7 @@ nav ul li{
     text-decoration: none;
 }
 
-.todoquemsomos{
+#todoquemsomos{
     margin-top: 8%;
     width: 100vw;
     height: 90vh;
@@ -176,7 +148,7 @@ nav ul li{
 /*Abaixo, linhas de código de Victoria Moreira */
 /* AQUI COMECA TIPO DE CARTOES */
 
-.container-1{
+#container-1{
     background-color: #E7EEF3;
     padding-top: 10vh;
     height: 45vh;
@@ -227,13 +199,13 @@ nav ul li{
 
 /* AQUI COMECA EMPRESAS PARCEIRAS */
 
-.grid-empresas-parceiras{
+#grid-empresas-parceiras{
     height: 100vh;
     display: grid;
     grid-template-rows: 0.5fr 1fr 1fr;
 }
 
-.grid-empresas-parceiras > h2{
+#grid-empresas-parceiras > h2{
 
     height: 20vh;
     display: flex;
@@ -324,4 +296,115 @@ span{
 }
 footer{
     margin: 30px;
+}
+
+@media screen and (max-width:768px){
+    /* DANIEL BARRADAS */
+    header{
+        overflow-x: hidden;
+    }
+    .links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 10vh;
+        background-color: #ff914d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .link li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    
+    /* DANIELLE ARANTES */
+
+    #home{
+        background-image: url(fundhomecelular.png);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .primeira-coluna{
+        display: grid;
+        align-content: flex-start;
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+    
+    .imagem-home {
+        display: none;
+    }
+    
+    .frase-home1, .frase-home2{
+        font-size: x-large;
+        color: rgb(201, 111, 26);
+    }
+
+    #tituloquemsomos{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    #tirarlinha{
+        text-decoration: none;
+    }
+    
+    #todoquemsomos{
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    
+    
+    .quem-somos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #imagemfundo{
+        display: none;
+    }
+    form{
+        display: grid;
+        padding: 8% 4%;
+        font-size: medium;
+        background-image: url(contaeredes/fundocelular.png);
+    }
+
+    .todofooter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+    }
+    div > p{
+        margin-bottom: 1vh;
+    }
+    .store{
+        width: 40%;
+        height: auto;
+    }
+    .icons{
+        width: 7vh;
+        height: auto;
+    }
+    footer{
+        margin: 20px;
+        display: block;
+        text-align: center;
+    }
+    
 }
