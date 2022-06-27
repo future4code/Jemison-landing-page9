@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- DANIEL -->
+    <header>
+        <nav>
+            <label class="logo"><img src="menu/f4bank.png" alt="Logo F4Bank"></label>
+            <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#todoquemsomos">Sobre</a></li>
+                    <li><a href="#container-1">Cartão</a></li>
+                    <li><a href="#grid-empresas-parceiras">Parceiros</a></li>
+                    <li><a href="#contadigital">Conta</a></li>
+            </ul>
+            <div class="burger">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+        </nav>
+        <script>
+            const navSlide=()=>{
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.links');
+
+                burger.addEventListener('click', ()=>{
+                    nav.classList.toggle('link-ativo')
+                })
+            }
+            navSlide();
+        </script>
+    </header>
+  
+<!-- Wilson -->
+    <section id="home">
+        <div class="primeira-coluna">
+            <h1 class="frase-home1">Tradição e inovação</h1>
+            <h1 class="frase-home2">no seu bolso.</h1>
+            <button class="botao-home"><a id="tirarlinha" href="#contadigital">Abra sua conta</a></button>
+        </div>
+        <img class="imagem-home"src="fundo_home.png" alt="fundo_home">
+    </section>
+    <section id="todoquemsomos">
+        <p id="tituloquemsomos">Quem somos</p>
+        <main class="quem-somos">
+            <div class="comeco">
+                <h2>O Começo</h2>
+                <p>F4bank foi fundado com uma visão inovadora: ser um banco democrático, 
+                presente em todo o País, a serviço de seu desenvolvimento econômico e social. 
+                Para isso, atendeu aos imigrantes, lavradores e pequenos comerciantes, 
+                além do público tradicional das casas bancárias,formado por empresários e grandes proprietários de terras. 
+                </p>
+            </div>
+            <div class="proposito">
+                <h2 >Propósito</h2>
+                <p>Nosso maior propósito é o cultivo de relações duradouras. Com essa mentalidade, 
+                consideramos que os indicadores de sucesso do nosso trabalho são clientes satisfeitos e time engajado.</p>
+            </div>
+            <div class="Valores">
+                <h2 >Valores</h2>
+                <p>Superar expectativas é o que nos motiva.
+                Existimos para superar o possível. </p>
+            </div>
+            <div class="clientes">
+                <h2 >Clientes e usuários</h2>
+                <p>Clientes e usuários são a nossa razão de ser. Nós os posicionamos no centro de nossas
+                atividades com o objetivo de identificar e atender suas expectativas e necessidades e aprimorar
+                constantemente nossas ações. Esse é o nosso jeito de atuar no mercado bancário e de serviços.</p>
+            </div>
+        </main>
+    </section>
+  
+ <!-- VICTORIA -->
+    <section id="container-1">
+        <div class="bloco-1">
+            <img src="/imagens-cartoes/Free_Credit_Card_Mockup_1.png" alt="Imagem referente ao cartão F4 Gold para clientes de conta pessoa física.">
+        </div>
+        <div class="bloco-2">
+            <h3 >F4 Gold</h3>
+            <p>Moderno, prático e o melhor: livre de taxas. Aceito em mais de 30 milhões de estabelecimentos, o F4 Gold proporciona facilidade e segurança para suas compras. Aproveite.</p>
+        </div>
+    </section>
+    <section class="container-2">
+        <div class="bloco-3">
+            <h3 >F4 Plus</h3>
+            <p>Com cartão de crédito, a conta PJ fica mais completa. Com as menores taxas do mercado você terá motivos para concentrar a vida financeira da sua empresa em uma conta só.</p>
+        </div>
+        <div class="bloco-4">
+            <img class="item cartao-plus" src="/imagens-cartoes/Free_Credit_Card_Mockup_3.png" alt="Imagem referente ao cartão F4 Plus para clientes de conta pessoa jurídica.">
+        </div>
+    </section>
+
+    <section id="grid-empresas-parceiras">
+       <h2>Empresas que contratam nossos serviços</h2>
+       <div class="icones-empresas-linha1">
+           <img class="icones-empresas" src="/imagens-empresas-parceiras/4comfort.png" alt="ícone da empresa parceira 4comfort.">
+           <img class="icones-empresas" src="/imagens-empresas-parceiras/4cars.png" alt="ícone da empresa parceira 4cars.">
+           <img class="icones-empresas" src="/imagens-empresas-parceiras/Log4.png" alt="ícone da empresa parceira Log4.">
+           <img class="icones-empresas" src="imagens-empresas-parceiras/4safe.png" alt="ícone da empresa parceira 4safe Seguros.">
+       </div>
+       <div class="icones-empresas-linha2">
+            <img class="icones-empresas" src="/imagens-empresas-parceiras/upfour.png" alt="ícone da empresa parceira upfour.">
+            <img class="icones-empresas" src="/imagens-empresas-parceiras/4food.png" alt="ícone da empresa parceira 4food.">
+            <img class="icones-empresas" src="/imagens-empresas-parceiras/f4life.png" alt="ícone da empresa parceira f4life.">
+       </div>
+   </section> 
+  
+ <!-- DANIELLE -->
+    <section id="contadigital">
+        <form action="#">
+            <p>CRIE SUA CONTA DIGITAL:</p>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div>
+                <label>CPF: </label>
+                <input type="text" id="CPF" name="CPF">
+            </div>
+
+            <div>
+                <label for="telefone">Telefone: </label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <input type="checkbox" id="concordo" name="concordo">
+                <label for="concordo">Concordo com os termos e condições de privacidade.</label>
+            </div>
+            <div>
+                <button class="botao" type="submit">Enviar.</button>
+            </div>
+        </form>
+        <img id="imagemfundo" src="contaeredes/fundo.png" alt="Foto de um celular com cartão ambos com logo do banco."></a>
+    </section>
+    <br>
+    <footer>
+        <div class="todofooter">
+            <div class="lojas">
+                <p><span>Baixe o APP:</span></p>
+                <a href="https://play.google.com/store/games/" target="_blank"><img class="store" src="contaeredes/google.png" alt="Google Store."></a>
+                <a href="https://www.apple.com/br/app-store/" target="_blank"><img class="store" src="contaeredes/apple.png" alt="Apple Store."></a>
+            </div>
+            <div>
+                <p><span>F4Bank:</span></p>
+                <p>Home.</p>
+                <p>Quem Somos Nós.</p>
+                <p>Cartão Sem Taxas.</p>
+                <p>Empresas Parceiras.</p>
+                <p>Conta Corrente Digital.</p>
+            </div>
+            <div>
+                <p><span>Entre em contato:</span></p>
+                <p>0800 6070 6070</p>
+                <p>f4bank@f4bank.com</p>
+                <p>24 horas.</p>
+            </div>
+            <div>
+                <p><span>Ouvidoria:</span></p>
+                <p>0800 6070 6070</p>
+                <p>sendhelp@f4bank.com</p>
+                <p>Atendimento das 9h às 18h - Segunda a Sábado.</p>
+            </div>
+            <div>
+                <p><span>Saiba mais:</span></p>
+                <p>Política de Privacidade.</p>
+                <p>Política de Transparência.</p>
+                <p>Política de Segurança.</p>
+            </div>
+        </div>
+        <div class="icones">
+            <a href="https://www.facebook.com/" target="_blank"><img class="icons" src="contaeredes/facebook.png" alt="Facebook."></a>
+            <a href="https://instagram.com/" target="_blank"><img class="icons" src="contaeredes/instagram.png" alt="Instagram."></a>
+            <a href="https://linkedin.com/" target="_blank"><img class="icons" src="contaeredes/linkedin.png" alt="Linkedin."></a>
+            <a href="https://twitter.com/" target="_blank"><img class="icons" src="contaeredes/twitter.png" alt="Twitter."></a>
+            <a href="https://youtube.com/" target="_blank"><img class="icons" src="contaeredes/youtube.png" alt="Twitter."></a>
+        </div>
+    </footer>
+</body>
+</html>
